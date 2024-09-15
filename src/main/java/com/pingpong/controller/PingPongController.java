@@ -1,4 +1,4 @@
-package com.example.pingpong;
+package com.pingpong.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -6,7 +6,6 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class PingPongController {
 
-    // This endpoint returns "pong" when "/ping" is requested
     @GetMapping("/ping")
     public String ping() {
         return "pong";
